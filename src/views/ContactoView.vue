@@ -24,7 +24,7 @@ async function handleSubmit() {
 
   try {
     // ¡IMPORTANTE! Reemplaza la URL con tu endpoint real de Formspree.
-    const response = await fetch('https://formspree.io/f/TU_ENDPOINT_REAL_DE_FORMSPREE', {
+    const response = await fetch('https://formspree.io/f/meolejkk', {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
