@@ -1,0 +1,36 @@
+<template>
+  <footer class="bg-dark border-t border-slate-700/50">
+    <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-6">
+        
+        <img class="h-16" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
+        
+        <div class="flex gap-6">
+          <a href="http://api.whatsapp.com/send?phone=3863534208" target="_blank" aria-label="WhatsApp" class="social-link">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com/people/Don-Enrique-Beer-food/100063241178163" target="_blank" aria-label="Facebook" class="social-link">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/don_enrique_beer/?hl=es" target="_blank" aria-label="Instagram" class="social-link">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+        <p class="text-base text-slate-400 text-center">
+          © {{ new Date().getFullYear() }} Don Enrique - Beer & Food. Todos los derechos reservados.
+        </p>
+        
+      </div>
+    </div>
+  </footer>
+</template>
+
+<style scoped lang="postcss">
+.social-link {
+  @apply text-slate-400 text-2xl transition-all duration-300;
+}
+.social-link:hover {
+  @apply text-primary transform -translate-y-1;
+}
+</style>
