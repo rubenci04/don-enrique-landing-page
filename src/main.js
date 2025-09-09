@@ -10,6 +10,7 @@ import './assets/styles/tailwind.css';
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
+import i18n from './i18n';
 
 // 3. Creamos nuestra instancia de la aplicación Vue.
 const app = createApp(App);
@@ -17,5 +18,8 @@ const app = createApp(App);
 // 4. Le decimos a Vue que use nuestro sistema de rutas.
 app.use(router);
 
-// 5. Montamos la aplicación en el div con id="app" de nuestro index.html.
+// 5. Le decimos a Vue que use i18n.
+app.use(i18n);
+
+// 6. Montamos la aplicación en el div con id="app" de nuestro index.html.
 app.mount('#app');

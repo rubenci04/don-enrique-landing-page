@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "menu": "Our Dishes",
+    "contact": "Contact"
+  },
+  "home": {
+    "subtitle": "Pizzeria - Brewery",
+    "discover_dishes": "Discover our dishes",
+    "featured_dishes": "Our Featured Dishes",
+    "our_history": "Our History",
+    "history_text": "Don Enrique is a place where good food and good beer meet. We were born from a passion for gastronomy and the desire to create a cozy atmosphere to enjoy with friends and family.",
+    "learn_more": "Learn more",
+    "discover_menu": "Discover Our Menu",
+    "menu_text": "From artisan pizzas to gourmet burgers, we have something for all tastes.",
+    "see_menu": "See the menu"
+  },
+  "menu": {
+    "title": "Our Dishes",
+    "subtitle": "Made with Passion",
+    "categories": {
+      "sandwiches": {
+        "title": "Sandwiches",
+        "description": "Of Milanesa (Common or Special), Lomitos (Common or Special) and Toasted Veal or Ham and Cheese."
+      },
+      "burgers": {
+        "title": "Burgers",
+        "description": "From the classic Single to our special creations like the Don Roque and the Don Enrique. Don't miss the Matambrito!"
+      },
+      "fries": {
+        "title": "Fries",
+        "description": "The most delicious fries in all their versions: Classic, with Cheddar and the house specials with crispy bacon and green onions."
+      },
+      "pizzas": {
+        "title": "Pizzas",
+        "description": "A wide variety of homemade pizzas made with the best ingredients and house recipes."
+      },
+      "dishes": {
+        "title": "Dishes",
+        "description": "Try our milanesas a la napolitana, they are the specialty of Don Enrique!"
+      },
+      "drinks": {
+        "title": "Drinks",
+        "description": "Craft and industrial beers, house wines, soft drinks and flavored waters."
+      }
+    }
+  },
+  "about": {
+    "title": "A Little Bit of Our History",
+    "history_text": "Don Enrique was born in the heart of our city with a simple dream: to create a place where good food, quality craft beer and unforgettable moments merge. Since our humble beginnings, we have dedicated ourselves to perfecting our recipes, from our pizza dough to the selection of hops for our beers.<br/><br/>Each dish we serve and each pint we pour carries a part of our passion and dedication. Our place, designed with a balance between rustic and modern, seeks to be the perfect setting for your meetings, celebrations and chats with friends. More than a bar, we are a family that opens its doors to you.",
+    "gallery_title": "History in Photos",
+    "gallery": {
+      "item1": {
+        "title": "",
+        "description": "Every part of the premises was built with our own hands."
+      },
+      "item2": {
+        "title": "",
+        "description": "Giving life and color to our outdoor space."
+      },
+      "item3": {
+        "title": "",
+        "description": "A green corner to enjoy a good beer."
+      },
+      "item4": {
+        "title": "",
+        "description": "The bar and furniture, made with recycled materials and a lot of effort."
+      },
+      "item5": {
+        "title": "",
+        "description": "Treatment and burning of the wood for a rustic and unique style."
+      },
+      "item6": {
+        "title": "",
+        "description": "A warm and modern environment ready to welcome you."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form_title": "Send us a Message",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_message": "Message",
+    "form_submit": "Send Message",
+    "form_submitting": "Sending...",
+    "form_success_title": "Message Sent!",
+    "form_success_text": "Thank you for contacting us. We will get back to you shortly.",
+    "map_title": "Find us Here"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -31,9 +31,9 @@ const emit = defineEmits(['close']);
         leave-to-class="opacity-0 scale-95"
       >
         <div class="fixed inset-0" @click.self="emit('close')">
-          <div class="relative bg-[#2e353f] rounded-xl shadow-lg max-w-2xl w-full mx-auto my-12 text-white overflow-hidden">
+          <div class="relative bg-light dark:bg-dark-light rounded-xl shadow-lg max-w-2xl w-full mx-auto my-12 text-slate-800 dark:text-white overflow-hidden">
 
-            <button @click="emit('close')" class="absolute top-4 right-4 text-slate-400 hover:text-white transition">
+            <button @click="emit('close')" class="absolute top-4 right-4 text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
             </button>
 

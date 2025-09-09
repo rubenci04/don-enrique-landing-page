@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -11,17 +12,17 @@ export default {
       // =======================================================================
       colors: {
         'primary': '#E48F45', // Naranja principal de la marca
-        'dark': '#1c2027',    // Un negro no tan puro para los fondos
-        'dark-light': '#2e353f', // Un gris oscuro para tarjetas y elementos secundarios
+        'dark': '#2e353f',    // Un gris oscuro para los fondos
+        'dark-light': '#4a5568', // Un gris más claro para tarjetas y elementos secundarios
+        'light': '#f5f5f5', // Un blanco no tan puro para los fondos
+        'light-dark': '#e5e5e5', // Un gris claro para tarjetas y elementos secundarios
       },
       // =======================================================================
       // AÑADIMOS NUESTRAS FUENTES PERSONALIZADAS
       // =======================================================================
       fontFamily: {
-        // La clave 'oswald' crea la clase de utilidad 'font-oswald'.
-        'oswald': ['Oswald', 'sans-serif'],
-        // La clave 'lato' crea la clase 'font-lato'.
-        'lato': ['Lato', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
+        'prompt': ['Prompt', 'sans-serif'],
       },
       // =======================================================================
       // AÑADIMOS ANIMACIONES PERSONALIZADAS PARA EL SCROLL

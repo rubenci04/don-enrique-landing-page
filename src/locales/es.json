@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "menu": "Nuestros Platos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "subtitle": "Pizzeria - Cervecería",
+    "discover_dishes": "Conocé nuestros platos",
+    "featured_dishes": "Nuestros Platos Destacados",
+    "our_history": "Nuestra Historia",
+    "history_text": "Don Enrique es un lugar donde la buena comida y la buena atención se unen. Nacimos de la pasión por la gastronomía y el deseo de crear un ambiente acogedor para disfrutar con amigos y familia.",
+    "learn_more": "Conocé más",
+    "discover_menu": "Conocé Nuestro Menú",
+    "menu_text": "Desde pizzas artesanales hasta hamburguesas gourmet, tenemos algo para todos los gustos.",
+    "see_menu": "Ver la carta"
+  },
+  "menu": {
+    "title": "Nuestros Platos",
+    "subtitle": "Hecho con Pasión",
+    "categories": {
+      "sandwiches": {
+        "title": "Sandwiches",
+        "description": "De Milanesa (Común o Especial), Lomitos (Común o Especial) y Tostados de Ternera o Jamón y Queso."
+      },
+      "burgers": {
+        "title": "Hamburguesas",
+        "description": "Desde la clásica Single hasta nuestras creaciones especiales como la Don Roque y la Pecadora. ¡No te pierdas la Don Enrique!"
+      },
+      "fries": {
+        "title": "Papas",
+        "description": "Las más ricas papas en todas sus versiones: Clásicas, con Cheddar y las especiales de la casa con panceta crocante y verdeo."
+      },
+      "pizzas": {
+        "title": "Pizzas",
+        "description": "Una gran variedad de pizzas caseras elaboradas con los mejores ingredientes y recetas de la casa."
+      },
+      "dishes": {
+        "title": "Platos",
+        "description": "Prueba nuestras milanesas a la napolitana, ¡son la especialidad de Don Enrique!"
+      },
+      "drinks": {
+        "title": "Bebidas",
+        "description": "Cervezas artesanales e industriales, vinos de la casa, gaseosas y aguas saborizadas."
+      }
+    }
+  },
+  "about": {
+    "title": "Un Poco de Nuestra Historia",
+    "history_text": "Don Enrique nació en el corazón de nuestra pueblo con un sueño simple: crear un lugar donde la buena comida, un espacion con mucha onda y los momentos inolvidables se fusionan. Desde nuestros humildes comienzos, nos hemos dedicado a perfeccionar nuestras recetas, desde la masa de nuestras pizzas hasta la selección de los cortes de carne para las hamburguesas y sandiwchs.<br/><br/>Cada plato que servimos y cada gaseosa o cerveza que destapamos lleva una parte de nuestra pasión y dedicación. El local, diseñado con un equilibrio entre lo rústico y lo moderno, busca ser el escenario perfecto para tus reuniones, celebraciones y charlas con amigos. Más que un bar, somos una familia que te abre sus puertas.",
+    "gallery_title": "Historia en fotos",
+    "gallery": {
+      "item1": {
+        "title": "",
+        "description": "Cada parte del local fue construida con nuestras propias manos."
+      },
+      "item2": {
+        "title": "",
+        "description": "Dando vida y color a nuestro espacio al aire libre."
+      },
+      "item3": {
+        "title": "",
+        "description": "Un rincón verde para disfrutar de una buena cerveza."
+      },
+      "item4": {
+        "title": "",
+        "description": "La barra y los muebles, hechos con a mano, desde cero y con mucho esfuerzo."
+      },
+      "item5": {
+        "title": "",
+        "description": "Elaboramos diariamente nuestro pan para las burgers."
+      },
+      "item6": {
+        "title": "",
+        "description": "Un ambiente cálido y moderno listo para recibirte."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "form_title": "Envíanos un Mensaje",
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_message": "Mensaje",
+    "form_submit": "Enviar Mensaje",
+    "form_submitting": "Enviando...",
+    "form_success_title": "¡Mensaje Enviado!",
+    "form_success_text": "Gracias por contactarnos. Te responderemos a la brevedad.",
+    "map_title": "Encuéntranos Aquí"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
