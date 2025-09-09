@@ -1,11 +1,11 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-// Importamos los componentes necesarios
 import BaseModal from '@/components/BaseModal.vue'; 
 import SectionTitle from '@/components/SectionTitle.vue';
+// Importo la imagen de fondo.
+import cartaBackgroundImage from '@/assets/images/fondos/fondo-carta.jpg';
 
-// Importamos las imágenes de los platos
 import imgSandwiches from '@/assets/images/carta/menu-sandwichs.jpeg'; 
 import imgBurgers from '@/assets/images/carta/menu-burgers.jpeg';
 import imgPapas from '@/assets/images/carta/menu-papas.jpeg';
@@ -13,16 +13,9 @@ import imgPizzas from '@/assets/images/carta/menu-pizza.jpeg';
 import imgPlatos from '@/assets/images/carta/menu-platos.jpeg';
 import imgBebidas from '@/assets/images/carta/menu-bebidas.jpeg';
 
-// =======================================================================
-// LÓGICA DEL COMPONENTE
-// =======================================================================
-
 const { t } = useI18n();
-
-// Variable reactiva para almacenar el plato seleccionado que se mostrará en el modal.
 const selectedPlato = ref(null);
 
-// Array con la información de cada categoría de plato.
 const platos = computed(() => [
   { id: 'platoModal1', titulo: t('menu.categories.sandwiches.title'), imagen: imgSandwiches, descripcion: t('menu.categories.sandwiches.description') },
   { id: 'platoModal2', titulo: t('menu.categories.burgers.title'), imagen: imgBurgers, descripcion: t('menu.categories.burgers.description') },
@@ -40,20 +33,22 @@ onMounted(() => {
       }
     });
   });
-
   const elements = document.querySelectorAll('[data-aos]');
   elements.forEach(el => observer.observe(el));
 });
 </script>
 
 <template>
-  <header class="h-[50vh] bg-cover bg-center bg-fixed relative" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/src/assets/images/fondos/fondo-carta.jpg')">
+  <header 
+    class="h-[50vh] bg-cover bg-center bg-fixed relative" 
+    :style="{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${cartaBackgroundImage})` }"
+  >
     <div class="flex items-center justify-center h-full">
       <h2 class="text-4xl lg:text-5xl text-white font-prompt uppercase tracking-widest">{{ $t('menu.title') }}</h2>
     </div>
   </header>
 
-  <main data-aos="fade-in-up">
+  <main data-aos>
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <SectionTitle>{{ $t('menu.subtitle') }}</SectionTitle>
 
@@ -68,7 +63,7 @@ onMounted(() => {
             <img 
               :src="plato.imagen" 
               :alt="plato.titulo" 
-              class="w-full h-full object-cover rounded-lg transform group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300"
+              class="w-full h-full object-contain p-4 rounded-lg transform group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300"
               loading="lazy"
             >
           </div>
@@ -94,6 +89,11 @@ onMounted(() => {
 <style scoped>
 [data-aos] {
   opacity: 0;
-  transition: opacity 0.5s;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+[data-aos].animate-fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>
