@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center gap-6">
         
-        <img class="h-16" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
+                <img class="h-[4rem]" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
         
         <div class="flex gap-6 items-center">
           <a href="tel:+5493863534208" class="social-link">

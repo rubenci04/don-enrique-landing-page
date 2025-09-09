@@ -42,7 +42,7 @@ onMounted(() => {
   >
     <div class="animate-fade-in-up">
       <RouterLink to="/" class="mb-8 block">
-        <img src="@/assets/images/logos/logo.png" class="max-h-52 mx-auto" alt="logo del sitio" loading="lazy">
+        <img src="@/assets/images/logos/logo.png" class="max-h-60 mx-auto" alt="logo del sitio" loading="lazy">
       </RouterLink>
       <h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-prompt uppercase tracking-widest">Don Enrique Beer & Food</h1>
       <h2 class="text-2xl md:text-3xl text-slate-300 font-prompt uppercase mt-2">{{ $t('home.subtitle') }}</h2>

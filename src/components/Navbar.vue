@@ -39,7 +39,7 @@ onUnmounted(() => {
         
         <div class="flex-shrink-0">
           <RouterLink to="/">
-            <img class="h-14 transition-transform duration-300 hover:scale-105" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
+            <img class="h-[4rem] transition-transform duration-300 hover:scale-105" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
           </RouterLink>
         </div>
 
