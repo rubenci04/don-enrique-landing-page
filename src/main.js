@@ -23,3 +23,8 @@ app.use(i18n);
 
 // 6. Montamos la aplicación en el div con id="app" de nuestro index.html.
 app.mount('#app');
+
+// 7. Importamos y inicializamos AOS para las animaciones.
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();

@@ -2,12 +2,12 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "menu": "Our Dishes",
+    "menu": "Our Menu",
     "contact": "Contact"
   },
   "home": {
     "subtitle": "Pizzeria - Brewery",
-    "discover_dishes": "Discover our dishes",
+    "discover_dishes": "Discover our menu",
     "featured_dishes": "Our Featured Dishes",
     "our_history": "Our History",
     "history_text": "Don Enrique is a place where good food and good beer meet. We were born from a passion for gastronomy and the desire to create a cozy atmosphere to enjoy with friends and family.",
@@ -17,32 +17,71 @@
     "see_menu": "See the menu"
   },
   "menu": {
-    "title": "Our Dishes",
+    "title": "Our Menu",
     "subtitle": "Made with Passion",
     "categories": {
       "sandwiches": {
         "title": "Sandwiches",
-        "description": "Of Milanesa (Common or Special), Lomitos (Common or Special) and Toasted Veal or Ham and Cheese."
+        "description": "Of Milanesa (Common or Special), Lomitos (Common or Special) and Toasted Veal or Ham and Cheese.",
+        "items": [
+          "Common Milanesa",
+          "Special Milanesa",
+          "Common Lomito",
+          "Special Lomito",
+          "Toasted Veal",
+          "Toasted Ham and Cheese"
+        ]
       },
       "burgers": {
         "title": "Burgers",
-        "description": "From the classic Single to our special creations like the Don Roque and the Don Enrique. Don't miss the Matambrito!"
+        "description": "From the classic Single to our special creations like the Don Roque and the Don Enrique. Don't miss the Matambrito!",
+        "items": [
+          "Single",
+          "Double",
+          "Don Roque",
+          "Pecadora",
+          "Don Enrique"
+        ]
       },
       "fries": {
         "title": "Fries",
-        "description": "The most delicious fries in all their versions: Classic, with Cheddar and the house specials with crispy bacon and green onions."
+        "description": "The most delicious fries in all their versions: Classic, with Cheddar and the house specials with crispy bacon and green onions.",
+        "items": [
+          "Classic",
+          "With Cheddar",
+          "Don Enrique (Bacon and Green Onion)"
+        ]
       },
       "pizzas": {
         "title": "Pizzas",
-        "description": "A wide variety of homemade pizzas made with the best ingredients and house recipes."
+        "description": "A wide variety of homemade pizzas made with the best ingredients and house recipes.",
+        "items": [
+          "Muzzarella",
+          "Napolitana",
+          "Special",
+          "Fugazzeta",
+          "Calabresa"
+        ]
       },
       "dishes": {
         "title": "Dishes",
-        "description": "Try our milanesas a la napolitana, they are the specialty of Don Enrique!"
+        "description": "Try our milanesas a la napolitana, they are the specialty of Don Enrique!",
+        "items": [
+          "Milanesa a la Napolitana",
+          "Milanesa a Caballo",
+          "Lasagna"
+        ]
       },
       "drinks": {
         "title": "Drinks",
-        "description": "Craft and industrial beers, house wines, soft drinks and flavored waters."
+        "description": "Craft and industrial beers, house wines, soft drinks and flavored waters.",
+        "items": [
+          { "name": "Draft Beer (varieties)", "description": "Ask for craft beer varieties." },
+          { "name": "Bottled Beer", "description": "Industrial bottled beers." },
+          { "name": "House Wine", "description": "House red or white wine." },
+          { "name": "Soft Drinks", "description": "Variety of soft drinks." },
+          { "name": "Water and Sparkling Water", "description": "Mineral water." }
+        ]
       }
     }
   },

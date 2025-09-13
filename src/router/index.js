@@ -18,8 +18,8 @@ const routes = [
     component: () => import('../views/NosotrosView.vue')
   },
   {
-    path: '/nuestros-platos',
-    name: 'nuestros-platos',
+    path: '/nuestra-carta',
+    name: 'nuestra-carta',
     component: () => import('../views/CartaView.vue')
   },
   {

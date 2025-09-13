@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import BaseButton from '@/components/BaseButton.vue';
 import SectionTitle from '@/components/SectionTitle.vue';
 // Importo la imagen de fondo para que funcione en Netlify.
@@ -36,18 +36,6 @@ async function handleSubmit() {
     submitting.value = false;
   }
 }
-
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-fade-in-up');
-      }
-    });
-  });
-  const elements = document.querySelectorAll('[data-aos]');
-  elements.forEach(el => observer.observe(el));
-});
 </script>
 
 <template>
@@ -56,14 +44,15 @@ onMounted(() => {
     :style="{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${contactBackgroundImage})` }"
   >
     <div class="flex items-center justify-center h-full">
-      <h2 class="text-4xl lg:text-5xl text-white font-prompt uppercase tracking-widest">{{ $t('contact.title') }}</h2>
+      <!-- Este es el título principal de la sección de contacto -->
+      <h2 class="text-4xl lg:text-5xl text-white font-principal uppercase tracking-widest" data-aos="fade-up">{{ $t('contact.title') }}</h2>
     </div>
   </header>
 
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" data-aos>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
       
-      <div>
+      <div data-aos="fade-right">
         <SectionTitle>{{ $t('contact.form_title') }}</SectionTitle>
         <div class="bg-light-dark dark:bg-dark-light p-8 rounded-xl shadow-lg mt-12">
           
@@ -82,7 +71,7 @@ onMounted(() => {
               <input type="email" id="email" v-model="formData.email" required class="form-input">
             </div>
             <div>
-              <label for="message" class="form-label">{{ $t('contact.form_message') }}</label>
+              <label for="message" class="form-.label">{{ $t('contact.form_message') }}</label>
               <textarea id="message" v-model="formData.message" rows="5" required class="form-input"></textarea>
             </div>
             <div>
@@ -96,9 +85,10 @@ onMounted(() => {
         </div>
       </div>
       
-      <div>
+      <div data-aos="fade-left">
         <SectionTitle>{{ $t('contact.map_title') }}</SectionTitle>
-        <div class="w-full rounded-xl overflow-hidden shadow-lg mt-12 min-h-[500px] border-4 border-light-dark dark:border-dark-light">
+        <!-- Aquí corrijo el contenedor del mapa para que no se corte -->
+        <div class="w-full rounded-xl overflow-hidden shadow-lg mt-12 h-[500px] border-4 border-secondary/20 dark:border-secondary/40">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.3924867035375!2d-65.55902731119613!3d-27.269576568328965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423c95f42fee37d%3A0x5805b4efb733a1d0!2sDon%20Enrique%2C%20beer%20and%20food!5e0!3m2!1ses-419!2sar!4v1756394709728!5m2!1ses-419!2sar"
             class="w-full h-full"
@@ -117,20 +107,12 @@ onMounted(() => {
 
 <style lang="postcss" scoped>
 .form-label {
-  @apply block mb-2 text-sm font-bold text-slate-800 dark:text-slate-300 uppercase tracking-wider;
+  /* Aquí uso mi fuente secundaria para las etiquetas del formulario */
+  @apply block mb-2 text-sm font-bold font-secundaria text-dark dark:text-slate-300 uppercase tracking-wider;
 }
 .form-input {
   @apply w-full px-4 py-3 bg-light dark:bg-dark border border-slate-300 dark:border-slate-600 rounded-lg text-slate-800 dark:text-slate-200 
          focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary 
          transition-all duration-300;
-}
-[data-aos] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-[data-aos].animate-fade-in-up {
-  opacity: 1;
-  transform: translateY(0);
 }
 </style>

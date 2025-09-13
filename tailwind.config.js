@@ -11,18 +11,18 @@ export default {
       // AMPLIAMOS NUESTRA PALETA DE COLORES PARA EL PROYECTO
       // =======================================================================
       colors: {
-        'primary': '#E48F45', // Naranja principal de la marca
-        'dark': '#2e353f',    // Un gris oscuro para los fondos
-        'dark-light': '#4a5568', // Un gris más claro para tarjetas y elementos secundarios
-        'light': '#f5f5f5', // Un blanco no tan puro para los fondos
-        'light-dark': '#e5e5e5', // Un gris claro para tarjetas y elementos secundarios
+        'primary': '#e89a4e',
+        'secondary': '#3a4f41',
+        'light': '#f5efe6',
+        'dark': '#2c2c2c',
       },
       // =======================================================================
-      // AÑADIMOS NUESTRAS FUENTES PERSONALIZADAS
+      // AÑADO MIS FUENTES PERSONALIZADAS PARA EL PROYECTO.
+      // Katfus para los títulos y Lato para el resto del texto.
       // =======================================================================
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        'prompt': ['Prompt', 'sans-serif'],
+        'principal': ['katfus', 'serif'],
+        'secundaria': ['lato', 'sans-serif'],
       },
       // =======================================================================
       // AÑADIMOS ANIMACIONES PERSONALIZADAS PARA EL SCROLL

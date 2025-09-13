@@ -5,7 +5,9 @@ import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <div class="bg-light dark:bg-dark text-slate-800 dark:text-slate-200 font-sans">
+  <!-- Este es el contenedor principal de mi aplicación -->
+  <!-- Aquí aplico los estilos de fondo y la fuente base para todo el sitio -->
+  <div class="bg-light dark:bg-dark text-slate-800 dark:text-slate-200 font-secundaria">
     <Navbar />
     <main class="pt-20">
       

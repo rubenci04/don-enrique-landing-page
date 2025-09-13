@@ -1,10 +1,15 @@
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
   <footer class="bg-light-dark dark:bg-dark border-t border-slate-300 dark:border-slate-700/50">
     <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center gap-6">
         
                 <RouterLink to="/">
-          <img class="h-[4rem] transition-all duration-300 hover:scale-105 hover:opacity-80" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
+          <!-- Mi logo en el footer, también con animación de brillo. -->
+          <img class="h-[4rem] transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(232,154,78,0.7)]" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
         </RouterLink>
         
         <div class="flex gap-6 items-center">

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import BaseModal from '@/components/BaseModal.vue'; 
 import SectionTitle from '@/components/SectionTitle.vue';
@@ -24,18 +24,6 @@ const platos = computed(() => [
   { id: 'platoModal5', titulo: t('menu.categories.dishes.title'), imagen: imgPlatos, descripcion: t('menu.categories.dishes.description') },
   { id: 'platoModal6', titulo: t('menu.categories.drinks.title'), imagen: imgBebidas, descripcion: t('menu.categories.drinks.description') }
 ]);
-
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-fade-in-up');
-      }
-    });
-  });
-  const elements = document.querySelectorAll('[data-aos]');
-  elements.forEach(el => observer.observe(el));
-});
 </script>
 
 <template>
@@ -44,22 +32,22 @@ onMounted(() => {
     :style="{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${cartaBackgroundImage})` }"
   >
     <div class="flex items-center justify-center h-full">
-      <h2 class="text-4xl lg:text-5xl text-white font-prompt uppercase tracking-widest">{{ $t('menu.title') }}</h2>
+      <h2 class="text-4xl lg:text-5xl text-white font-principal uppercase tracking-widest" data-aos="fade-up">{{ $t('menu.title') }}</h2>
     </div>
   </header>
 
-  <main data-aos>
+  <main>
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <SectionTitle>{{ $t('menu.subtitle') }}</SectionTitle>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 mt-16">
         
-        <div v-for="plato in platos" :key="plato.id"
+        <div v-for="(plato, index) in platos" :key="plato.id"
              @click="selectedPlato = plato"
-             class="text-center group cursor-pointer">
+             class="text-center group cursor-pointer" data-aos="fade-up" :data-aos-delay="index * 100">
           
           <div class="relative w-64 h-64 mx-auto">
-             <div class="absolute inset-0 bg-light-dark dark:bg-dark-light rounded-lg transform group-hover:scale-105 transition-transform duration-300"></div>
+             <div class="absolute inset-0 bg-secondary/20 dark:bg-secondary/40 rounded-lg transform group-hover:scale-105 transition-transform duration-300"></div>
             <img 
               :src="plato.imagen" 
               :alt="plato.titulo" 
@@ -68,7 +56,7 @@ onMounted(() => {
             >
           </div>
 
-          <h4 class="mt-6 text-2xl font-prompt uppercase text-slate-800 dark:text-white font-semibold transition-colors duration-300 group-hover:text-primary">
+          <h4 class="mt-6 text-2xl font-secundaria uppercase text-dark dark:text-white font-semibold transition-colors duration-300 group-hover:text-primary">
             {{ plato.titulo }}
           </h4>
         </div>
@@ -79,21 +67,16 @@ onMounted(() => {
 
   <BaseModal :show="selectedPlato !== null" @close="selectedPlato = null">
     <div v-if="selectedPlato" class="text-center">
-      <h3 class="text-2xl font-prompt uppercase text-primary mb-4">{{ selectedPlato.titulo }}</h3>
-      <img :src="selectedPlato.imagen" :alt="selectedPlato.titulo" class="rounded-lg mb-4 w-full bg-light-dark dark:bg-dark-light p-4" loading="lazy">
-      <p class="text-slate-800 dark:text-slate-300 text-lg">{{ selectedPlato.descripcion }}</p>
+      <h3 class="text-2xl font-secundaria uppercase text-primary mb-4">{{ selectedPlato.titulo }}</h3>
+      <img :src="selectedPlato.imagen" :alt="selectedPlato.titulo" class="rounded-lg mb-4 w-full bg-secondary/20 dark:bg-secondary/40 p-4" loading="lazy">
+      <p class="text-dark dark:text-slate-300 text-lg font-secundaria mb-4">{{ selectedPlato.descripcion }}</p>
+      <ul class="text-left font-secundaria text-dark dark:text-slate-300 space-y-2">
+        <li v-for="item in selectedPlato.items" :key="item" class="border-b border-secondary/20 pb-2">- {{ item }}</li>
+      </ul>
     </div>
   </BaseModal>
 </template>
 
 <style scoped>
-[data-aos] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-[data-aos].animate-fade-in-up {
-  opacity: 1;
-  transform: translateY(0);
-}
 </style>
+

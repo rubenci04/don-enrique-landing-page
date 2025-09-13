@@ -2,13 +2,13 @@
   "nav": {
     "home": "Inicio",
     "about": "Nosotros",
-    "menu": "Nuestros Platos",
+    "menu": "Nuestra Carta",
     "contact": "Contacto"
   },
   "home": {
     "subtitle": "Pizzeria - Cervecería",
-    "discover_dishes": "Conocé nuestros platos",
-    "featured_dishes": "Nuestros Platos Destacados",
+    "discover_dishes": "Conocé nuestra carta",
+    "featured_dishes": "Nuestra Carta Destacada",
     "our_history": "Nuestra Historia",
     "history_text": "Don Enrique es un lugar donde la buena comida y la buena atención se unen. Nacimos de la pasión por la gastronomía y el deseo de crear un ambiente acogedor para disfrutar con amigos y familia.",
     "learn_more": "Conocé más",
@@ -17,32 +17,71 @@
     "see_menu": "Ver la carta"
   },
   "menu": {
-    "title": "Nuestros Platos",
+    "title": "Nuestra Carta",
     "subtitle": "Hecho con Pasión",
     "categories": {
       "sandwiches": {
         "title": "Sandwiches",
-        "description": "De Milanesa (Común o Especial), Lomitos (Común o Especial) y Tostados de Ternera o Jamón y Queso."
+        "description": "De Milanesa (Común o Especial), Lomitos (Común o Especial) y Tostados de Ternera o Jamón y Queso.",
+        "items": [
+          "Milanesa Común",
+          "Milanesa Especial",
+          "Lomito Común",
+          "Lomito Especial",
+          "Tostado de Ternera",
+          "Tostado de Jamón y Queso"
+        ]
       },
       "burgers": {
         "title": "Hamburguesas",
-        "description": "Desde la clásica Single hasta nuestras creaciones especiales como la Don Roque y la Pecadora. ¡No te pierdas la Don Enrique!"
+        "description": "Desde la clásica Single hasta nuestras creaciones especiales como la Don Roque y la Pecadora. ¡No te pierdas la Don Enrique!",
+        "items": [
+          "Single",
+          "Doble",
+          "Don Roque",
+          "Pecadora",
+          "Don Enrique"
+        ]
       },
       "fries": {
         "title": "Papas",
-        "description": "Las más ricas papas en todas sus versiones: Clásicas, con Cheddar y las especiales de la casa con panceta crocante y verdeo."
+        "description": "Las más ricas papas en todas sus versiones: Clásicas, con Cheddar y las especiales de la casa con panceta crocante y verdeo.",
+        "items": [
+          "Clásicas",
+          "Con Cheddar",
+          "Don Enrique (Panceta y Verdeo)"
+        ]
       },
       "pizzas": {
         "title": "Pizzas",
-        "description": "Una gran variedad de pizzas caseras elaboradas con los mejores ingredientes y recetas de la casa."
+        "description": "Una gran variedad de pizzas caseras elaboradas con los mejores ingredientes y recetas de la casa.",
+        "items": [
+          "Muzzarella",
+          "Napolitana",
+          "Especial",
+          "Fugazzeta",
+          "Calabresa"
+        ]
       },
       "dishes": {
         "title": "Platos",
-        "description": "Prueba nuestras milanesas a la napolitana, ¡son la especialidad de Don Enrique!"
+        "description": "Prueba nuestras milanesas a la napolitana, ¡son la especialidad de Don Enrique!",
+        "items": [
+          "Milanesa a la Napolitana",
+          "Milanesa a Caballo",
+          "Lasagna"
+        ]
       },
       "drinks": {
         "title": "Bebidas",
-        "description": "Cervezas artesanales e industriales, vinos de la casa, gaseosas y aguas saborizadas."
+        "description": "Cervezas artesanales e industriales, vinos de la casa, gaseosas y aguas saborizadas.",
+        "items": [
+          "Cerveza Tirada (variedades)",
+          "Cerveza en Botella",
+          "Vino de la casa",
+          "Gaseosas",
+          "Agua con y sin gas"
+        ]
       }
     }
   },

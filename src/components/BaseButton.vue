@@ -58,7 +58,8 @@ defineProps({
    Definimos una clase base '.btn' con todos los estilos y efectos.
 */
 .btn {
-  @apply inline-block bg-primary text-white font-bold uppercase font-prompt py-3 px-8 
+  /* Aquí uso mi fuente secundaria para el texto del botón */
+  @apply inline-block bg-primary text-white font-bold uppercase font-secundaria py-3 px-8 
          rounded-lg shadow-lg text-lg tracking-wider
          transform hover:-translate-y-1 hover:shadow-primary/50
          transition-all duration-300

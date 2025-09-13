@@ -1,10 +1,12 @@
 <script setup>
-// Este modal recibe una prop 'show' para saber si debe mostrarse o no,
-// y emite un evento 'close' cuando el usuario quiere cerrarlo.
 defineProps({
   show: {
     type: Boolean,
     default: false,
+  },
+  product: {
+    type: Object,
+    default: null,
   },
 });
 
@@ -31,14 +33,15 @@ const emit = defineEmits(['close']);
         leave-to-class="opacity-0 scale-95"
       >
         <div class="fixed inset-0" @click.self="emit('close')">
-          <div class="relative bg-light dark:bg-dark rounded-xl shadow-lg max-w-2xl w-full mx-auto my-12 text-slate-800 dark:text-white overflow-hidden">
+          <div class="relative bg-light dark:bg-dark rounded-xl shadow-lg max-w-md w-full mx-auto my-12 text-dark dark:text-white overflow-hidden">
 
             <button @click="emit('close')" class="absolute top-4 right-4 text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white transition">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
             </button>
 
-            <div class="p-6">
-              <slot></slot>
+            <div class="p-6 text-center">
+              <h3 class="text-2xl font-lato uppercase text-primary mb-4">{{ product.name }}</h3>
+              <p class="text-lg font-sans">{{ product.description }}</p>
             </div>
 
           </div>
