@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	font-family: 'Rakkas', 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Rakkas', 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+p, li, span, a, input, textarea, button {
+	font-family: 'Rakkas', 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+strong, b {
+	font-weight: bold;
+}

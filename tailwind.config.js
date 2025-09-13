@@ -21,8 +21,8 @@ export default {
       // Katfus para los títulos y Lato para el resto del texto.
       // =======================================================================
       fontFamily: {
-        'principal': ['katfus', 'serif'],
-        'secundaria': ['lato', 'sans-serif'],
+  'principal': ['Rakkas', 'Lato', 'serif'],
+  'secundaria': ['Lato', 'Rakkas', 'sans-serif'],
       },
       // =======================================================================
       // AÑADIMOS ANIMACIONES PERSONALIZADAS PARA EL SCROLL
