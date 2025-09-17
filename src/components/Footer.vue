@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
         
                 <RouterLink to="/">
           <!-- Mi logo en el footer, también con animación de brillo. -->
-          <img class="h-[4rem] transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(232,154,78,0.7)]" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
+          <img class="h-[9rem] transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(232,154,78,0.7)]" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
         </RouterLink>
         
         <div class="flex gap-6 items-center">

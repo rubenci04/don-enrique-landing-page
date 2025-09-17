@@ -40,8 +40,8 @@ const galeria = computed(() => [
   <main>
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" data-aos="fade-up">
       <div class="flex justify-center">
-        <div class="max-w-3xl text-center text-slate-800 dark:text-slate-300 text-lg leading-relaxed font-secundaria">
-          <p v-html="historiaTexto"></p>
+        <div class="max-w-3xl text-center text-slate-800 dark:text-slate-300 text-xl leading-relaxed font-secundaria">
+          <p class="text-[1.25rem]" v-html="historiaTexto"></p>
         </div>
       </div>
     </section>

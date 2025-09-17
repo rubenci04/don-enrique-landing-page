@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	font-family: 'Rakkas', 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 }
 
@@ -12,8 +12,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
-p, li, span, a, input, textarea, button {
-	font-family: 'Rakkas', 'Lato', sans-serif;
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+li, span, a, input, textarea, button {
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 }
 

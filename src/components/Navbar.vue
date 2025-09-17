@@ -40,7 +40,7 @@ onUnmounted(() => {
         <div class="flex-shrink-0">
           <RouterLink to="/">
             <!-- Este es mi logo. Le agrego una animación de brillo al pasar el mouse. -->
-            <img data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" class="h-[4rem] transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(232,154,78,0.7)]" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
+            <img data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" class="h-[9rem] transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(232,154,78,0.7)]" src="@/assets/images/logos/logo-letra.png" alt="Logo Don Enrique"/>
           </RouterLink>
         </div>
 
@@ -97,7 +97,7 @@ onUnmounted(() => {
    el template más limpio y reutilizar estilos.
 */
 .nav-link {
-  @apply text-dark dark:text-slate-300 uppercase font-secundaria tracking-wider px-3 py-2 rounded-md text-lg transition-colors duration-300 relative;
+  @apply text-dark dark:text-slate-300 uppercase font-secundaria font-black tracking-wider px-3 py-2 rounded-md text-lg transition-colors duration-300 relative;
   /* Creamos una pseudo-clase 'after' para la línea animada de abajo */
   &::after {
     @apply content-[''] bg-primary absolute bottom-0 left-0 h-[3px] w-full transform scale-x-0 transition-transform duration-300;
@@ -112,7 +112,7 @@ onUnmounted(() => {
 }
 
 .nav-link-mobile {
-  @apply text-dark dark:text-slate-300 uppercase font-secundaria tracking-wider px-3 py-3 rounded-md text-lg transition duration-300 block text-center;
+  @apply text-dark dark:text-slate-300 uppercase font-secundaria font-black tracking-wider px-3 py-3 rounded-md text-lg transition duration-300 block text-center;
 }
 .nav-link-mobile:hover {
   @apply text-primary bg-secondary/20 dark:bg-secondary/40;
